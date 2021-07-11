@@ -1,0 +1,72 @@
+.social-text {
+  max-width: 50ch;
+
+  h3 {
+    margin-bottom: 16px;
+  }
+}
+
+.social-icons {
+  margin-top: pxtoem(14);
+
+  ion-icon {
+    @include toRem(font-size, 30);
+    margin-left: pxtoem(25);
+    cursor: pointer;
+  }
+
+  @include for-any-size(938px) {
+    ion-icon {
+      margin-top: 10px;
+    }
+  }
+
+  .twitter {
+    color: #1da1f2;
+
+    &:hover,
+    &:focus {
+      color: darken(#1da1f2, 10%);
+    }
+  }
+
+  .twitch {
+    color: #6441a4;
+    &:hover,
+    &:focus {
+      color: darken(#6441a4, 10%);
+    }
+  }
+
+  .linkedin {
+    color: #2867b2;
+    &:hover,
+    &:focus {
+      color: darken(#2867b2, 10%);
+    }
+  }
+
+  .facebook {
+    color: #4267b2;
+    &:hover,
+    &:focus {
+      color: darken(#4267b2, 10%);
+    }
+  }
+
+  .instagram {
+    color: #285aeb;
+    &:hover,
+    &:focus {
+      color: darken(#285aeb, 10%);
+    }
+  }
+
+  .tiktok {
+    color: black;
+    &:hover,
+    &:focus {
+      color: lighten(black, 20%);
+    }
+  }
+}

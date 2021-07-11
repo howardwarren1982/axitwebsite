@@ -1,0 +1,106 @@
+.section-hero {
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../img/Clip.png");
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.hero-text {
+  max-width: 514px;
+
+  @include for-any-size(470px) {
+    h1 {
+      @include toRem(font-size, 19);
+    }
+
+    p {
+      @include toRem(font-size, 15);
+      line-height: 15px;
+    }
+  }
+}
+
+.get-started {
+  width: 360px;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+
+  h4 {
+    background-color: #f5f5f5;
+    padding: pxtoem(20) 0;
+  }
+
+  span {
+    color: #ff9b51;
+  }
+
+  input::placeholder {
+    @include toRem(font-size, 14);
+    color: #bdbdbda6;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    background-color: $primary-color;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    color: white;
+    margin-top: 53px;
+    padding: pxtoem(20) 40%;
+
+    &:hover,
+    &:focus {
+      background-color: $primary-color-hover;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #bdbdbd75;
+    padding-bottom: pxtoem(7);
+    margin-top: pxtoem(44);
+  }
+}
+
+.hero-text {
+  font-family: $hero-font;
+  h1 {
+    font-weight: 400;
+    width: 25ch;
+  }
+
+  div,
+  p {
+    margin-bottom: pxtoem(44);
+  }
+
+  p {
+    font-weight: 300;
+    line-height: $standard-line-spacing;
+  }
+
+  h1,
+  p {
+    color: white;
+  }
+
+  .graydash {
+    background-color: white;
+    height: 2px;
+    width: 65px;
+  }
+
+  .hero-btn {
+    padding: pxtoem(14) pxtoem(30);
+  }
+}
+@include for-any-size(766px) {
+  .get-started {
+    align-self: center;
+  }
+}

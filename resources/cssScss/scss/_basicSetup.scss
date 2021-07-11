@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $primary-font;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body,
+section,
+nav {
+  overflow-x: hidden;
+}
+
+* button,
+* a {
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h2 {
+  @include toRem(font-size, 36);
+  font-size: $section-header-font;
+  position: relative;
+  text-align: center;
+  font-family: $section-header-font;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: pxtoem(30);
+    margin-left: 15px;
+    background-color: $primary-color;
+    top: 50px;
+    right: 48.5%;
+  }
+}
