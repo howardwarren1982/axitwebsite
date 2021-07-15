@@ -33,6 +33,12 @@ section {
   justify-content: space-between;
 }
 
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // Mixins
 
 @mixin for-size($size) {
@@ -95,6 +101,14 @@ section {
 //     font-size:pxtoem(11, 20);
 //   }
 
+@mixin position($top: null, $right: null, $bottom: null, $left: null) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+//-----------------------------------------
 @include for-any-size(766px) {
   .flex.flex-responsive {
     flex-direction: column;

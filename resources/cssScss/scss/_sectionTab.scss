@@ -1,0 +1,126 @@
+.tab-selector {
+  background-color: #333333;
+  max-width: 100px;
+  max-height: 100px;
+  position: absolute;
+  cursor: pointer;
+
+  @include for-any-size(380px) {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  h3 {
+    color: white;
+    padding: pxtoem(50) pxtoem(38);
+    @include toRem(font-size, 13);
+
+    @include for-any-size(380px) {
+      padding: pxtoem(20) pxtoem(20);
+    }
+  }
+}
+
+.section-tabs {
+  background-color: #f5f5f5;
+  position: relative;
+  padding-top: 157px;
+  padding-bottom: 140px;
+
+  .city-img img {
+    margin-top: 30px;
+
+    @include for-any-size(1011px) {
+      display: none;
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  button {
+    padding: 17px 23px;
+  }
+
+  //highlighting when selected
+
+  input[type="radio"]:checked + label .tab-selector {
+    background-color: $primary-color;
+  }
+
+  .text {
+    margin: 0px 56px 0px 160px;
+    height: 200px;
+
+    @include for-any-size(1011px) {
+      margin-left: 50%;
+    }
+
+    @include for-any-size(749px) {
+      margin-left: 35%;
+    }
+
+    h3 {
+      margin-bottom: pxtoem(52);
+    }
+
+    p {
+      width: 60ch;
+      @include toRem(font-size, $primary-font-par-size);
+      margin-bottom: pxtoem(52);
+
+      @include for-any-size(749px) {
+        width: 50ch;
+      }
+
+      @include for-any-size(551px) {
+        width: 100%;
+      }
+    }
+  }
+
+  //position the tabs
+
+  label[for="three"] .tab-selector {
+    @include position(360px);
+
+    @include for-any-size(1011px) {
+      @include position(360px, 0, 0, 5%);
+    }
+  }
+
+  label[for="two"] .tab-selector {
+    @include position(260px);
+    @include for-any-size(1011px) {
+      @include position(260px, 0, 0, 5%);
+    }
+  }
+
+  label[for="one"] .tab-selector {
+    @include position(160px);
+    @include for-any-size(1011px) {
+      @include position(160px, 0, 0, 5%);
+    }
+  }
+
+  //making selections
+
+  .tab-one,
+  .tab-two,
+  .tab-three {
+    display: none;
+  }
+
+  #one:checked ~ .tab-one {
+    display: block;
+  }
+
+  #two:checked ~ .tab-two {
+    display: block;
+  }
+
+  #three:checked ~ .tab-three {
+    display: block;
+  }
+}
