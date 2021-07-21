@@ -29,6 +29,11 @@ section {
   display: flex;
 }
 
+.flex-rev {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .flex-space-between {
   justify-content: space-between;
 }

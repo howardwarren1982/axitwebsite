@@ -29,3 +29,16 @@
 // hoverFontChange(premiumButton, planColThree);
 
 // --------------------------------------------------------
+
+function toCamelCase(str) {
+  let firstWord = str.split(/[-,_]/)[0];
+  let output = str
+    .split(/[-,_]/)
+    .slice(1)
+    .map((x) => x.charAt(0).toUpperCase() + x.slice(1))
+    .join("");
+
+  return firstWord + output;
+}
+
+console.log(toCamelCase("Jello-my-name-is-Howard"));
