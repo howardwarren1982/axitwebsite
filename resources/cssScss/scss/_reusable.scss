@@ -3,7 +3,7 @@
 /*-------------------------- */
 
 .row {
-  max-width: 1025px;
+  max-width: 1134px;
   margin: 0 auto 0 auto;
 }
 
@@ -116,6 +116,18 @@ section {
 //-----------------------------------------
 @include for-any-size(766px) {
   .flex.flex-responsive {
+    flex-direction: column;
+  }
+}
+
+@include for-any-size(1100px) {
+  .flex.flex-responsive-1100 {
+    flex-direction: column;
+  }
+}
+
+@include for-any-size(1100px) {
+  .flex-rev.flex-responsive-1100 {
     flex-direction: column;
   }
 }

@@ -49,3 +49,8 @@ h2 {
     right: 48.5%;
   }
 }
+
+.standard-paragraph {
+  @include toRem(font-size, $primary-font-par-size);
+  line-height: $standard-line-spacing;
+}
