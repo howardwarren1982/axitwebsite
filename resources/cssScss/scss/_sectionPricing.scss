@@ -1,0 +1,63 @@
+.section-pricing {
+  background-color: #e4e4e4;
+  h2 {
+    margin-bottom: pxtoem(28);
+  }
+
+  p {
+    text-align: center;
+  }
+  .card-templete {
+    gap: 37px;
+    margin-top: pxtoem(81);
+    margin-bottom: pxtoem(90);
+  }
+
+  .border {
+    background-color: $primary-color;
+    min-height: 5px;
+    color: white;
+    @include toRem(font-size, 14);
+    font-weight: bold;
+  }
+
+  .pricing-cards {
+    text-align: center;
+    width: 343px;
+    .top-half {
+      h5,
+      p {
+        background-color: $pricing-card-upper-background;
+      }
+      p {
+        color: white;
+      }
+
+      h5 {
+        color: white;
+        border-bottom: 1px solid white;
+        font-family: $hero-font;
+      }
+
+      .header {
+        @include toRem(font-size, 20);
+      }
+      .price {
+        @include toRem(font-size, 90);
+        font-weight: bold;
+        span {
+          @include toRem(font-size, 40);
+        }
+      }
+    }
+
+    .bottom-half {
+      background-color: white;
+      p {
+        padding-top: pxtoem(15);
+        padding-bottom: pxtoem(15);
+        border-bottom: 1px solid #e9dfdf;
+      }
+    }
+  }
+}
