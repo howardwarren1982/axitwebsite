@@ -1,4 +1,8 @@
 .section-pricing {
+  .mid {
+    position: relative;
+    bottom: 20px;
+  }
   background-color: #e4e4e4;
   h2 {
     margin-bottom: pxtoem(28);
@@ -21,16 +25,29 @@
     font-weight: bold;
   }
 
+  .mid-card {
+    padding-top: pxtoem($padding-16);
+    padding-bottom: pxtoem($padding-16);
+  }
+
   .pricing-cards {
     text-align: center;
     width: 343px;
+
     .top-half {
       h5,
       p {
         background-color: $pricing-card-upper-background;
       }
+
+      h5:first-child {
+        padding-top: pxtoem($padding-16);
+        padding-bottom: pxtoem($padding-16);
+      }
       p {
         color: white;
+        padding-top: pxtoem($padding-16);
+        padding-bottom: pxtoem($padding-16);
       }
 
       h5 {
@@ -58,6 +75,16 @@
         padding-bottom: pxtoem(15);
         border-bottom: 1px solid #e9dfdf;
       }
+    }
+  }
+
+  @include for-any-size(345px) {
+    .pricing-cards {
+      width: 90%;
+    }
+
+    h2 {
+      font-size: 150%;
     }
   }
 }
