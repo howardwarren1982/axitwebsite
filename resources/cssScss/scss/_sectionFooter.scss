@@ -1,0 +1,8 @@
+footer {
+  background-color: $footer-color;
+  padding-top: pxtoem($padding-20);
+  padding-bottom: pxtoem($padding-10);
+  small {
+    color: white;
+  }
+}

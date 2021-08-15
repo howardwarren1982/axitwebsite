@@ -1,0 +1,54 @@
+.section-contact {
+  padding-top: pxtoem($padding-107);
+  padding-bottom: pxtoem($padding-68);
+  h2 {
+    margin-bottom: pxtoem($margin-20);
+  }
+  p {
+    margin-bottom: pxtoem($margin-90);
+  }
+
+  form {
+    input,
+    textarea {
+      border: none;
+      border-bottom: 1px solid $contact-text-color;
+      color: $contact-text-color;
+      width: 528px;
+
+      &::placeholder {
+        color: $contact-text-color;
+        @include toRem(font-size, 14);
+      }
+    }
+
+    .form-templete {
+      margin-bottom: pxtoem($margin-37);
+      gap: 68px;
+    }
+
+    .input-side {
+      display: flex;
+      flex-direction: column;
+      gap: 62px;
+    }
+
+    .btn {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .contact-btn {
+      display: block;
+      padding: pxtoem(10) pxtoem(30);
+      margin: 0 auto;
+    }
+
+    @include for-any-size(537px) {
+      input,
+      textarea {
+        width: 250px;
+      }
+    }
+  }
+}

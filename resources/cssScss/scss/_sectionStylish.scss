@@ -1,0 +1,47 @@
+.section-axure-design {
+  background:
+    /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */ url(../img/ClipStreet.png);
+  background-size: cover;
+  padding: pxtoem($padding-70) 0;
+  color: white;
+  h2 {
+    margin-bottom: pxtoem(25);
+
+    &::after {
+      background-color: white;
+      top: 60px;
+    }
+  }
+
+  p {
+    margin-bottom: pxtoem($margin-37);
+  }
+
+  .design-btn {
+    display: block;
+    padding: pxtoem(10) pxtoem(30);
+    margin: 0 auto;
+  }
+
+  @include for-any-size(669px) {
+    h2 {
+      @include toRem(font-size, 19);
+    }
+
+    p {
+      @include toRem(font-size, 15);
+      line-height: 15px;
+    }
+
+    h2 {
+      &::after {
+        background-color: white;
+        top: 40px;
+      }
+    }
+  }
+}

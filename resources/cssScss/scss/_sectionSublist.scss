@@ -1,5 +1,6 @@
 .section-sublist {
-  padding: 8px;
+  padding-top: pxtoem($padding-80);
+  padding-bottom: pxtoem($padding-60);
 
   @include for-any-size(1100px) {
     .flex {

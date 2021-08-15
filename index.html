@@ -369,40 +369,42 @@
     <section class="section-our-customers">
       <div class="row">
         <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="flex">
+        <p class="standard-paragraph intro">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div class="flex flex-responsive customer-card-templete">
           <div class="customer-card">
-            <p>
+            <p class="standard-paragraph comment">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus accusamus expedita repellat similique odio aspernatur
               ex, architecto eaque quo suscipit.
             </p>
             <img src="resources/img/avatar_2_u231.png" alt="customer picture" />
-            <p>
+            <p class="standard-paragraph">
               <span>Jeremy H.</span> <br />
               Manager
             </p>
           </div>
           <div class="customer-card">
-            <p>
+            <p class="standard-paragraph comment">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus accusamus expedita repellat similique odio aspernatur
               ex, architecto eaque quo suscipit.
             </p>
             <img src="resources/img/avatar_2_u231.png" alt="customer picture" />
-            <p>
+            <p class="standard-paragraph">
               <span>John S.</span> <br />
               Freelancer
             </p>
           </div>
           <div class="customer-card">
-            <p>
+            <p class="standard-paragraph comment">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus accusamus expedita repellat similique odio aspernatur
               ex, architecto eaque quo suscipit.
             </p>
             <img src="resources/img/avatar_2_u231.png" alt="customer picture" />
-            <p>
+            <p class="standard-paragraph">
               <span>Susan W.</span> <br />
               Photographer
             </p>
@@ -414,35 +416,45 @@
     <section class="section-axure-design">
       <div class="row">
         <h2 class="axure-design-heading">STYLISH AXURE DESIGN</h2>
-        <p>
+        <p class="standard-paragraph center">
           Use the sections you need, remove the ones you don't. Create gorgeous
           prototypes faster than ever!
         </p>
-        <button class="btn clear">Download</button>
+        <button class="btn clear design-btn">Download</button>
       </div>
     </section>
 
     <section class="section-contact">
       <div class="row">
         <h2>CONTACT US</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="standard-paragraph center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
         <form action="">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Subject" />
-          <textarea
-            name="Message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
-          <button type="submit" class="btn filled">Send Message</button>
+          <div class="flex form-templete flex-responsive center">
+            <div class="input-side">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Subject" />
+            </div>
+
+            <textarea
+              name="Message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn contact-btn filled">
+            Send Message
+          </button>
         </form>
       </div>
     </section>
 
-    <footer>
+    <footer class="section-footer">
       <div class="row center">
         <div class="social-icons">
           <ion-icon class="twitter" name="logo-twitter"></ion-icon>
