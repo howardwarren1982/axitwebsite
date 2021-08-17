@@ -1,4 +1,5 @@
 .section-hero {
+  padding: pxtoem($padding-140) 0;
   background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("../img/Clip.png");
@@ -48,7 +49,7 @@
     margin-right: auto;
     border: none;
     color: white;
-    margin-top: 53px;
+    margin-top: 55px;
     padding: pxtoem(20) 40%;
 
     &:hover,

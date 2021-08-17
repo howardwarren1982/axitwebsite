@@ -3,6 +3,10 @@
   padding-bottom: pxtoem($padding-68);
   h2 {
     margin-bottom: pxtoem($margin-20);
+
+    &::after {
+      right: 47.5%;
+    }
   }
   p {
     margin-bottom: pxtoem($margin-90);

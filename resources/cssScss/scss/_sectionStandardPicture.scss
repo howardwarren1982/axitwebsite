@@ -1,6 +1,6 @@
 .section-standard-picture {
+  padding: pxtoem($padding-80) 0;
   background-color: #f5f5f5;
-  padding: 8px;
   & > div {
     gap: pxtoem(55);
   }
