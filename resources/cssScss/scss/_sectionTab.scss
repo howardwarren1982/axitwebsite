@@ -131,3 +131,15 @@
     animation: fade-in 0.5s ease-in-out;
   }
 }
+
+@include for-any-size(1100px) {
+  .section-tabs {
+    height: 547px;
+  }
+}
+
+@include for-any-size(560px) {
+  .section-tabs {
+    height: 697px;
+  }
+}

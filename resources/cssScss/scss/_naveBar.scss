@@ -3,7 +3,8 @@ nav {
   color: #b0b0b0;
   font-weight: 500;
 
-  a:hover {
+  a:hover,
+  &:focus {
     color: white;
   }
 
@@ -12,41 +13,12 @@ nav {
     padding-right: 5px;
   }
 
-  .list-items {
-    gap: 47px;
-    margin-top: 27px;
-    @include toRem(font-size, 14);
-  }
-
-  .logo-side {
-    padding-left: 5px;
-    img {
-      max-width: 79px;
-      margin: 20px 0;
-    }
-  }
-
-  ion-icon {
-    @include toRem(font-size, 30);
-    margin-top: 20px;
-  }
-
   .responsive-nav {
     padding: 5px;
     display: none;
 
-    li {
-      padding-bottom: 5px;
-    }
-
     .list-responsive {
       overflow: hidden;
-      height: 50px;
-
-      &:hover,
-      &:focus {
-        height: 200px;
-      }
     }
   }
   @include for-size(phone-only) {
