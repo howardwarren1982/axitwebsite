@@ -1,0 +1,20 @@
+{
+  "name": "axitwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch resources/cssScss/scss:resources/cssScss/css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/howardwarren1982/axitwebsite.git"
+  },
+  "author": "Howard Warren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/howardwarren1982/axitwebsite/issues"
+  },
+  "homepage": "https://github.com/howardwarren1982/axitwebsite#readme"
+}
